@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>CodePen - A Pen by  Akash Nimare</title>
+
+    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+
+</head>
+
+<body>
+
+  <!doctype html>
+<html ng-app>
+<head>
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+
+</head>
+
+<body ng-controller="fbCtrl">
+
+<div id="w">
+   <div>
+     <h1>  Facebook graph search</h1>
+
+      <input type="text" id="fbusername" ng-model="username" placeholder="Facebook username...">
+      <a href="#" id="fbsubmitbtn" ng-click="getGitInfo()" >Search</a>
+
+      <div id="fbapidata" class="clearfix"></div>
+   </div>
+   <div ng-show="userNotFound">
+      <h2>No User Info Found</h2>
+   </div>
+   <div ng-show="loaded">
+
+     <h2>  <a href="https://www.facebook.com/search/{{user.id}}/photos-of" target="_blank">Click here</a> to see {{user.name}}'s  photos 
+
+      </h2>
+
+</body>
+</html>
+
+  <script src="js/index.js"></script>
+
+</body>
+
+</html>
